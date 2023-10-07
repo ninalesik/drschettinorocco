@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Mukta", sans-serif;
+  src: local("Mukta"), url("fonts/Mukta/Mukta-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @keyframes zoom {
   0%,
   100% {
@@ -17,7 +25,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Mukta", Arial, sans-serif;
   background-color: #fff;
 }
 
@@ -192,8 +200,6 @@ h2 {
   background-color: #333;
   color: #faf6f2;
 }
-.container__cosmetology {
-}
 .cosmetology__wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -265,7 +271,7 @@ h2 {
 }
 
 footer {
-  background-color: #333;
+  background-color: #07827e;
   color: #faf6f2;
   padding: 20px;
   text-align: center;
