@@ -139,7 +139,7 @@ h2 {
   color: #07827e;
 }
 .hero {
-  background-image: URL("../assets/img/doctor_img.png");
+  background-image: URL("../img/doctor_img.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
