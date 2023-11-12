@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Mukta", sans-serif;
-  src: local("Mukta"), url("fonts/Mukta/Mukta-Regular.ttf") format("ttf");
+  src: local("Mukta"),
+    url("../assets/fonts/Mukta/Mukta-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -139,7 +140,7 @@ h2 {
   color: #07827e;
 }
 .hero {
-  background-image: url("./assets/img/doctor_img.png");
+  background-image: url("../img/doctor_img.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -150,7 +151,10 @@ h2 {
   justify-content: space-between;
   color: #faf6f2;
 }
-
+.intro {
+  font-size: 20px;
+  font-style: italic;
+}
 .services {
   background-color: #faf6f2;
   padding-top: 65px;
@@ -184,14 +188,12 @@ h2 {
 
 .prestazioni {
   background-color: #333;
-  border: #07827e solid 4px;
-  border-radius: 10%;
+  border-radius: 2%;
 }
 
 .pathologies {
   background-color: #333;
-  border: #07827e solid 4px;
-  border-radius: 10%;
+  border-radius: 2%;
 }
 .diagnostics {
   background-color: #07827e;
@@ -220,7 +222,7 @@ h2 {
 }
 .swiper {
   display: flex;
-  width: 100%;
+  width: 80%;
   /* max-width: 800px; */
   height: auto;
 
@@ -269,6 +271,7 @@ h2 {
 .profile {
   background-color: #faf6f2;
 }
+
 .profile__text {
   color: #333;
   line-height: 1.6;
@@ -379,6 +382,12 @@ footer a:hover {
     width: 100%;
     padding: 20px;
   }
+  .prestazioni {
+    border-radius: 0%;
+  }
+  .pathologies {
+    border-radius: 0%;
+  }
   .cosmetology__wrap {
     grid-template-columns: 1fr;
   }
@@ -414,6 +423,12 @@ footer a:hover {
     width: 100%;
     padding: 20px;
   }
+  .prestazioni {
+    border-radius: 0%;
+  }
+  .pathologies {
+    border-radius: 0%;
+  }
   .cosmetology__wrap {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -442,6 +457,12 @@ footer a:hover {
   .services__card {
     width: 100%;
     padding: 20px;
+  }
+  .prestazioni {
+    border-radius: 0%;
+  }
+  .pathologies {
+    border-radius: 0%;
   }
   .cosmetology__wrap {
     grid-template-columns: 1fr;

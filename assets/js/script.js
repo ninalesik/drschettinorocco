@@ -23,7 +23,7 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 1000,
   effect: "fade",
-
+  slidesPerView: 2,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
