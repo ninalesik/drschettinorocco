@@ -140,7 +140,7 @@ h2 {
   color: #07827e;
 }
 .hero {
-  background-image: url("assets/img/doctor_img.png");
+  background-image: url("../img/doctor_img.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -165,11 +165,13 @@ h2 {
   padding: 30px 25px;
   text-align: center;
   justify-self: center;
+  place-items: center;
   line-height: 1.6;
   color: #faf6f2;
 }
 .services__title {
   font-size: 30px;
+  text-align: center;
 }
 .services-cards__top {
   display: grid;
@@ -179,23 +181,28 @@ h2 {
 }
 .services-cards__bottom {
   display: grid;
-  text-align: justify;
+  text-align: center;
   line-height: 1.6;
 }
 .services__title {
+  place-items: center;
   text-align: center;
 }
 
 .prestazioni {
   background-color: #333;
   border-radius: 2%;
+  text-align: center;
 }
 
 .pathologies {
   background-color: #333;
   border-radius: 2%;
+  text-align: center;
 }
 .diagnostics {
+  place-items: center;
+  text-align: center;
   background-color: #07827e;
   padding: 30px;
   margin-top: 15px;
@@ -222,8 +229,8 @@ h2 {
 }
 .swiper {
   display: flex;
-  width: 80%;
-  /* max-width: 800px; */
+  width: 100%;
+  max-width: 800px;
   height: auto;
 
   margin: 0 auto;
