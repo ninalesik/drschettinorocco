@@ -230,7 +230,6 @@ h2 {
 .swiper {
   display: flex;
   width: 100%;
-  max-width: 800px;
   height: auto;
 
   margin: 0 auto;
