@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,9 +11,22 @@
       sizes="32x32"
       href="assets/img/logo_svg.svg"
     />
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+AU+VIC:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Ephesis&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+AU+VIC:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header class="header">
@@ -22,9 +35,10 @@
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="#service" class="active">Prestazioni</a></li>
-          <li><a href="#estetica">Estetica</a></li>
-          <li><a href="#about">Profilo</a></li>
+          <li><a href="#about" class="active">Chi sono</a></li>
+          <li><a href="#services">Prestazioni</a></li>
+          <li><a href="#diseases">Patologie</a></li>
+          <li><a href="#profile">Profilo</a></li>
           <li><a href="#contacts">Contatti</a></li>
           <li><a href="tel:+393347703496">+39 334 770 3496</a></li>
         </ul>
@@ -38,120 +52,197 @@
     <section class="hero">
       <div class="container_hero">
         <div>
-          <h1>Dr. Rocco Schettino</h1>
-          <h2>Otorino, chirurgo estetico</h2>
-          <p class="intro">Esplora il mondo dei trattamenti avanzati di otorinolaringoiatria e dei procedimenti estetici trasformativi</p>
-          <p class="intro"> Affida la tua salute e i tuoi obiettivi estetici nelle mani di un professionista esperto che mette al primo posto il tuo benessere.</p>
+          <h1 class="hero__title">Dr. Rocco Schettino</h1>
+          <h2>Otorinolaringoiatra</h2>
+          <p class="intro">
+            Scopri i trattamenti specialistici in otorinolaringoiatria, per una
+            salute ottimale e un benessere duraturo.
+          </p>
+          <p class="intro">
+            Affidati all’esperienza e alla professionalità del Dr. Rocco
+            Schettino, impegnato a garantire cure di qualità per la tua salute.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="services" id="service">
-      <div class="container__services">
-        <h2 class="section_title section_title__services">
-          Otorinolaringoiatria
-        </h2>
-        <div class="services_cards">
-          <div class="services-cards__top">
-            <div class="prestazioni services__card">
-              <h3 class="services__title">Prestazioni effetuati</h3>
-              <ul class="list">
-                <li>Esame audiometrico</li>
-                <li>Esame vestibolare</li>
-                <li>Audiometrica pediatrica</li>
-                <li>Impedenziometria con timpanogramma e studio dei riflessi stapediali</li>
-                <li>Fibrolaringoscopia</li>
-                <li>Lavaggio auricolare</li>
-                <li>Visita Medicina Estetica</li>
-                <li>Visita Otorino con Lavaggio Auricolare</li>
-                <li>Visita Otorino successiva</li>
-                <li>Visita Otorinolaringoiatrica prima visita</li>
-                <li>Endoscopia nasale con l’ausilio di fibre ottiche</li>
-              </ul>
-            </div>
+    <section id="about" class="approach">
+      <div class="approach__container">
+        <div class="approach-image">
+          <picture class="approach_pic">
+            <source srcset="assets/img/approach-img.webp" type="image/webp" />
+            <img
+              class="approach_img"
+              src="assets/img/approach-img.jpg"
+              srcset="assets/img/approach-img.jpg"
+              alt="approach image"
+            />
+          </picture>
+        </div>          
+        <div class="approach-text">
+<h2 class="approach__title">Chi Sono</h2>
+          <p>
+            Con dedizione e professionalità, mi impegno a migliorare la salute
+            dell'orecchio, del naso e della gola dei miei pazienti. Con un
+            approccio attento e personalizzato, offro diagnosi precise e
+            trattamenti efficaci, avvalendomi delle tecnologie più moderne per
+            garantire risultati ottimali.
+          </p>
 
-            <div class="pathologies services__card">
-              <h3 class="services__title">Patologie trattate</h3>
-              <ul class="list">
-                <li>Adenoidi</li>
-                <li>Apnee notturne</li>
-                <li>Asma bronchiale</li>
-                <li>Emicrania</li>
-                <li>Ipertrofia turbinati</li>
-                <li>Ipoacusia</li>
-                <li>laringite</li>
-                <li>Polipi nasali</li>
-                <li>Reflusso gastroesofageo</li>
-                <li>Settoplastica</li>
-                <li>Sinusite</li>
-                <li>Sordità</li>
-              </ul>
-            </div>
+          <p>
+            Il mio obiettivo è supportare i pazienti in tutte le fasi del
+            trattamento, assicurando loro soluzioni su misura e un'attenzione
+            continua per il loro benessere e la qualità della vita.
+          </p>
+
+          <p>
+            Affidati alla mia esperienza per prenderti cura del tuo sistema
+            respiratorio e uditivo. Sono qui per accompagnarti verso una vita
+            più sana e confortevole!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="services__container">
+        <h3 class="section_title services__title">Prestazioni effettuati</h3>
+        <div class="services__cards">
+          <div class="card">
+            <img
+              src="assets/img/icons/blood_pressure.svg"
+              alt="services icon"
+            />
+            <h4>Esame audiometrico</h4>
+            <p>Valutazione della capacità uditiva</p>
           </div>
-          <div class="services-cards__bottom">
-            <div class="diagnostics services__card">
-              <h3 class="services__title">
-                Metodologie diagnostiche e terapeutiche
-              </h3>
-              <ul>
-                <li>
-                  Chirurgia nasale funzionale ed estetica seconda del tipo di
-                  difetto estetico e dell'entità dell'ostruzione nasale
-                </li>
-                <li>Riduzione chirurgica dei turbinati nasali</li>
-                <li>
-                  Chiurugia endoscopia funzionale dei seni paranasali con
-                  l'ausilio di fibre ottiche
-                </li>
-                Trattamento degli inestetismi del visto con fillers e botox
-              </li>
-
-              <li>Trattamento riempitivo delle labbra con fillers</li>
-              </ul>
-            </div>
+          <div class="card">
+            <img src="assets/img/icons/bloodtype.svg" alt="services icon" />
+            <h4>Esame vestibolare</h4>
+            <p>Analisi dell'equilibrio e delle funzioni vestibolari</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/icons/diagnosis.svg" alt="services icon" />
+            <h4>Audiometria pediatrica</h4>
+            <p>Test auditivi per bambini</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/icons/earthquake.svg" alt="services icon" />
+            <h4>Impedenziometria</h4>
+            <p>Studio della funzionalità dell'orecchio medio</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/icons/ecg_heart.svg" alt="services icon" />
+            <h4>Fibrolaringoscopia</h4>
+            <p>Esame della laringe con strumenti flessibili</p>
+          </div>
+          <div class="card">
+            <img
+              src="assets/img/icons/stethoscope_check.svg"
+              alt="services icon"
+            />
+            <h4>Lavaggio auricolare</h4>
+            <p>Pulizia dell'orecchio per rimuovere cerume</p>
+          </div>
+          <div class="card">
+            <img
+              src="assets/img/icons/medical_services.svg"
+              alt="services icon"
+            />
+            <h4>Rinoscopia</h4>
+            <p>Esame delle cavità nasali con fibra ottica</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cosmetology" id="estetica">
-      <h2 class="section_title section_title__cosmetology">
-        Chirurgia estetica
-      </h2>
-      <div class="container__cosmetology">
-        <div class="cosmetology__wrap">
-          <div class="cosmetology__description">
-            Nel mondo affascinante della chirurgia estetica, l'eleganza è
-            l'elemento chiave che definisce i trattamenti del Dottor Schettino.
-            Attraverso un tocco raffinato, il Dottor Schettino offre
-            un'esperienza unica con fillers e Botox. Con delicatezza, ridona
-            vita al viso, illuminando ogni linea con i Fillers Light. Un tocco
-            sottile che scolpisce il volto, restituendo freschezza e giovinezza.
-            Come un artista che crea armonia, il Dottor Schettino utilizza i
-            Fillers Medium per scolpire linee eleganti e contouring perfetto. Il
-            volto diventa una tela di equilibrio visivo. Con determinazione, il
-            Dottor Schettino usa i Fillers Hard per sfidare il tempo, creando un
-            ritratto di forza e resilienza. Ogni linea racconta una storia di
-            determinazione. Come un mago della giovinezza, il Dottor Schettino
-            usa il Botox per cancellare le rughe. Un tocco di magia che
-            trasforma la pelle in una tela senza tempo. Con raffinatezza, la
-            chirurgia estetica diventa un'arte intima, un'esperienza che celebra
-            la bellezza autentica di ogni individuo. In ogni trattamento,
-            l'eleganza del Dottor Schettino plasma la bellezza con maestria,
-            creando capolavori che raccontano storie di rinascita e riscoperta.
+    <section id="diseases" class="diseases">
+      <div class="diseases__container">
+        <div class="diseases__text">
+          <h3 class="section_title diseases__title">Principali Patologie Trattate</h3>
+          <ul class="diseases__list">
+            <li>
+              <img src="assets/img/icons/check.svg" alt="check icon" />Esame
+              audiometrico
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="check icon" /> Esame
+              vestibolare
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="check icon" />
+              Audiometria pediatrica
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="check icon" />
+              Impedenziometria con timpanogramma e studio dei riflessi
+               stapediali
+            </li>
+            <li>
+              <img
+                src="assets/img/icons/check.svg"
+                alt="check icon"
+              />Fibrolaringoscopia
+            </li>
+            <li>
+              <img src="assets/img/icons/check.svg" alt="check icon" />Lavaggio
+              auricolare
+            </li>
+            <li>
+              <img
+                src="assets/img/icons/check.svg"
+                alt="check icon"
+              />Rinoscopia con fibre ottiche
+            </li>
+          </ul>
+        </div>
+        <div class="diseases-image">
+          <picture class="diseases_pic">
+            <source srcset="assets/img/diseases-img.webp" type="image/webp" />
+            <img
+              class="diseases_img"
+              src="assets/img/diseases-img.jpg"
+              srcset="assets/img/diseases-img.jpg"
+              alt="diseases image"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="profile" id="estetica">
+      <h3 class="section_title">
+        Profilo Professionale del Dottor Rocco Schettino
+      </h3>
+      <div class="container__profile">
+        <div class="profile__wrap">
+          <div class="profile__description">
+            <p>
+              Specialista in otorinolaringoiatria, il Dr. Rocco Schettino è
+              laureato in Medicina e Chirurgia e ha conseguito la
+              specializzazione presso l'Università La Sapienza di Roma, seguita
+              da un master in Chirurgia Plastica Estetica Facciale
+              all'Università Tor Vergata. Con un'esperienza significativa presso
+              l’Ospedale Pediatrico Bambino Gesù e la clinica neurologica NCL,
+              dove ha partecipato a numerosi interventi di chirurgia cerebrale,
+              il Dr. Schettino offre competenze approfondite sia nel campo della
+              chirurgia funzionale che estetica del naso.
+            </p>
+            <p>
+              Con 14 pubblicazioni, di cui 9 internazionali, continua ad
+              aggiornarsi attraverso corsi specializzati per fornire trattamenti
+              sicuri e moderni ai suoi pazienti.
+            </p>
           </div>
           <div>
-            <div class="cosmetology_img">
-              <picture class="cosmetology_pic">
-                <source
-                  srcset="assets/img/cosmetology_img.webp"
-                  type="image/webp"
-                />
+            <div class="profile_img">
+              <picture class="profile_pic">
+                <source srcset="assets/img/ear_img.webp" type="image/webp" />
                 <img
-                  class="cosmetology_img"
-                  src="assets/img/cosmetology_img.png"
-                  srcset="assets/img/cosmetology_img.png"
-                  alt="cosmetology_picture"
+                  class="profile_img"
+                  src="assets/img/ear_img.jpeg"
+                  srcset="assets/img/ear_img.jpeg"
+                  alt="ear picture"
                 />
               </picture>
             </div>
@@ -160,117 +251,125 @@
       </div>
     </section>
 
-    <section class="before-after">
-      <h2 class="section_title section_title__results">
-        Risultati dei trattamenti estetici
-      </h2>
-
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture class="result_pic">
-              <source srcset="assets/img/result_img1.webp" type="image/webp" />
-              <img
-                class="result_img"
-                src="assets/img/result_img1.png"
-                srcset="assets/img/result_img1.png"
-                alt="result1"
-              />
-            </picture>
+    <section class="reviews">
+      <div class="reviews__container">
+        <h3 class="section_title reviews__title">Dicono di Dr. Rocco Schettino</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review1.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review2.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review3.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review4.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review5.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review6.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review7.png" alt="review image" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image_slider">
+                <img src="assets/img/reviews/review8.png" alt="review image" />
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <picture class="result_pic">
-              <source srcset="assets/img/result_img2.webp" type="image/webp" />
-              <img
-                class="result_img"
-                src="assets/img/result_img2.png"
-                srcset="assets/img/result_img2.png"
-                alt="result2"
-              />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="result_pic">
-              <source srcset="assets/img/result_img3.webp" type="image/webp" />
-              <img
-                class="result_img"
-                src="assets/img/result_img3.png"
-                srcset="assets/img/result_img3.png"
-                alt="result3"
-              />
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="result_pic">
-              <source srcset="assets/img/result_img4.webp" type="image/webp" />
-              <img
-                class="result_img"
-                src="assets/img/result_img4.png"
-                srcset="assets/img/result_img4.png"
-                alt="result4"
-              />
-            </picture>
-          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
     </section>
 
-    <section class="profile" id="about">
-      <h2 class="section_title section_title__results">
-        Profilo Professionale del Dottor Rocco Schettino
-      </h2>
-      <div class="profile__text">
-        <p>
-          Il Dottor Rocco Schettino è un esperto in Otorinolaringoiatria, con
-          una solida formazione accademica. Ha conseguito la specializzazione
-          presso l'Università degli Studi di Roma "La Sapienza" e ha ottenuto un
-          Master di 2° livello in Chirurgia Plastica Estetica Facciale presso
-          l'Università degli Studi di Roma "Tor Vergata".
-        </p>
-        <p>
-          Con una laurea in Medicina e Chirurgia ottenuta presso l'Università
-          degli Studi di Roma "La Sapienza" nel luglio 1998, il Dottor Schettino
-          ha accumulato un'ampia esperienza professionale nel corso degli anni.
-          Dal dicembre 2005 al novembre 2022, ha ricoperto il ruolo di Dirigente
-          Medico di 1° livello presso il DEA dell'Ospedale S.M. Goretti di
-          Latina. Ha inoltre lavorato presso l'Ospedale Pediatrico Bambino Gesù
-          per circa un anno e, successivamente, presso il reparto di
-          Neurochirurgia della Clinica Neurologica di Roma NCL, dove ha eseguito
-          da I e II operatore circa 200 interventi nell'ambito della chirurgia
-          cerebrale.
-        </p>
-        <p>
-          Autore di 14 pubblicazioni, di cui 9 a livello internazionale, il
-          Dottor Schettino ha continuato a perfezionare le sue competenze nel
-          campo della chirurgia nasale estetica e funzionale attraverso corsi
-          specializzati. È membro dell'Ordine dei Medici Chirurghi e Odontoiatri
-          della Provincia di Roma, con numero di iscrizione 49522.
-        </p>
+    <section id="contacts" class="contacts">
+      <div class="contact__container">
+        <h3 class="section_title contact__title">Contatti</h3>
+                <div class="contact__phone">
+          <p>
+            <strong>Telefono:</strong>
+            <a href="tel:+393347703496">Tel.+39 334 770 3496</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:r.schetti@libero.it">r.schetti@libero.it</a>
+          </p>
+        </div>
+
+        
+        <div class="contact__adresses">
+          <h3 class="contact__subtitle">Sedi Mediche</h3>
+          <div class="contacts__locations">
+                       <div class="location"> <img src="assets/img/icons/location.svg" alt="location icon" /> <br/>
+              <h4 class="location__name"> Studio Medico Firstmed</h4>
+              <p class="location__address">
+                Via Giovanni Battista Morgagni 30h, Roma
+              </p>
+              <a
+                href="https://maps.app.goo.gl/2mqBetaR1wX4Ngcq9"
+                target="_blank"
+                class="location__link"
+                >Visualizza su mappa</a
+              >
+            </div>
+                     <div class="location">
+              <h4 class="location__name"><img src="assets/img/icons/location.svg" alt="location icon" /> <br/>
+                Trinlab Poliambulatorio Specialistico
+              </h4>
+              <p class="location__address">Via Gregoriana 43, Frascati (RM)</p>
+              <a
+                href="https://maps.app.goo.gl/Yhuw2JkNJb2r88xq6"
+                target="_blank"
+                class="location__link"
+                >Visualizza su mappa</a
+              >
+            </div>
+                  <div class="location">
+              <h4 class="location__name"><img src="assets/img/icons/location.svg"> <br/>Centro Olos</h4>
+              <p class="location__address">
+                Via Artemisia Mammucari 26, Velletri
+              </p>
+              <a
+                href="https://maps.app.goo.gl/U15Mfj6vXE53wBT77"
+                target="_blank"
+                class="location__link"
+                >Visualizza su mappa</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div class="contacts" id="contacts">Contatti</div>
+      <div class="contacts__footer">Contatti</div>
       <div>
         <a href="tel:+393347703496">Tel.+39 334 770 3496</a> <br />
-        <a href="mailto:info@example.com">r.schetti@libero.it</a> <br />
-        <a href="https://maps.app.goo.gl/HtKS5uHXV3QxPpFK7" target="_blank"
-          >Studio Medico<br />
-          Via Valle Viola 6, Roma</a
-        ><br />
-        <a href="https://maps.app.goo.gl/2mqBetaR1wX4Ngcq9" target="_blank"
-          >Studio Medico Firstmed<br />
-          Via Giovanni Battista Morgagni 30h, Roma</a
-        >
-      </div>
-
-      <hr />
-      <p>&copy; 2023 Dottore Schettino Rocco. All rights reserved.</p>
+        <a href="mailto:r.schetti@libero.it">r.schetti@libero.it</a> <br />
+        
+      <hr/>
+      <p class="rights_row">&copy; 2023 Dottore Schettino Rocco. All rights reserved.</p>
     </footer>
     <div class="cookie-popup" id="cookiePopup">
       <div class="cookie-content">
@@ -283,8 +382,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./assets/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/animation.js"></script>
   </body>
 </html>

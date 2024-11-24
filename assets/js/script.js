@@ -18,25 +18,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  speed: 1000,
-  effect: "fade",
-  slidesPerView: 2,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  autoplay: {
-    delay: 2000,
-  },
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      simulateTouch: true,
+      grabCursor: true,
+      autoHeight: true,
+    },
+    slidesPerView: 3,
+    breakpoints: {
+      1240: {
+        slidesPerView: 3,
+      },
+      840: {
+        slidesPerView: 2,
+      },
+      560: {
+        slidesPerView: 2,
+      },
+      330: {
+        slidesPerView: 1,
+      },
+    },
+    spaceBetween: 15,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {

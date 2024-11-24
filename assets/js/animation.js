@@ -40,16 +40,16 @@ function animation() {
 
   const tlCosm = gsap.timeline({
     scrollTrigger: {
-      trigger: ".cosmetology",
+      trigger: ".profile",
       start: "top center",
       end: "bottom bottom",
       toggleActions: "play reverse play reverse",
     },
   });
-  tlCosm.from(".cosmetology", {
+  tlCosm.from(".profile", {
     duration: 1,
     backgroundColor: "#faf6f2",
-    color: "#333",
+    color: "#36454f",
   });
 
   const tlProfile = gsap.timeline({
