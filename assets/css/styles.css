@@ -1,10 +1,11 @@
-@font-face {
-  font-family: "Mukta", sans-serif;
-  src: local("Mukta"), url("../fonts/Mukta/Mukta-Regular.ttf") format("ttf");
+/* @font-face {
+  font-family: "Mukta";
+  src: local("Mukta"),
+    url("../fonts/Mukta/Mukta-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @keyframes zoom {
   0%,
@@ -27,7 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Mukta", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #faf6f2;
 }
 
@@ -171,12 +172,12 @@ h2 {
 }
 
 .intro {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
   font-style: italic;
+  line-height: 1.5;
 }
-
 .approach__container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -223,7 +224,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  align-items: space-around;
+  align-content: space-around;
 }
 .card {
   text-align: center;
@@ -437,12 +438,15 @@ footer {
   width: 100%;
   line-height: 1.6;
 }
+footer address {
+  font-style: normal;
+}
 footer a {
   text-decoration: none;
   color: #faf6f2;
 }
 footer a:hover {
-  background-color: #333;
+  /* background-color: #333; */
   color: #faf6f2;
   text-decoration: underline;
 }
@@ -504,7 +508,7 @@ footer a:hover {
     left: 0;
     z-index: 50;
     overflow-y: auto;
-    padding: 50px 50 px;
+    padding: 50px 50px;
     background-color: #36454f;
     animation: burgerAnimation 0.4s;
   }
@@ -588,10 +592,8 @@ footer a:hover {
     max-height: 300px;
     object-fit: cover;
   }
-  .profile {
-    .section_title {
-      margin-bottom: 0;
-    }
+  .profile .section_title {
+    margin-bottom: 0;
   }
   .profile__wrap {
     grid-template-columns: 1fr;
@@ -694,8 +696,10 @@ footer a:hover {
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
-  .location img {
-    width: 30px;
+  .location__icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 20px;
   }
   .cookie-popup {
     max-width: 300px;
@@ -807,9 +811,9 @@ footer a:hover {
   .profile__description {
     text-align: center;
     padding: 0 15px;
-    p {
-      font-size: 1rem;
-    }
+  }
+  .profile__description p {
+    font-size: 1rem;
   }
 
   .profile_img {
@@ -867,18 +871,13 @@ footer a:hover {
   .card h4 {
     font-size: 1rem;
     margin: 0;
+    margin-bottom: 5px;
   }
 
   .card p {
-    .section_title {
-      font-size: 1.3rem;
-      text-align: center;
-      padding-bottom: 10px;
-    }
     font-size: 0.9rem;
     margin: 0 5px;
   }
-
   .profile__description {
     text-align: center;
     padding: 0 10px;
