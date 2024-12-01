@@ -14,30 +14,34 @@ function animation() {
     ease: "back",
   });
 
-  tl.from(
-    ".section_title__services",
-    {
-      duration: 2,
-      opacity: 0,
-      color: "#333",
-    },
-    "-=1"
-  );
-
-  const tlCards = gsap.timeline({
+  gsap.to(".intro_text", {
+    opacity: 1,
+    x: 0,
+    duration: 2.3,
+    stagger: 1,
+    ease: "power2.out",
     scrollTrigger: {
-      trigger: ".services_cards",
-      start: "top center",
+      trigger: ".approach",
+      start: "top 25%",
+      end: "bottom bottom",
+      scrub: true,
+      markers: false,
     },
   });
 
-  tlCards.from(".services__card", {
+  gsap.from(".diseases__list li", {
+    x: -600,
     duration: 0.5,
-    opacity: 0,
-    yPercent: 100,
-    ease: "circ.out",
+    stagger: 0.3,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".diseases__list",
+      start: "top 80%",
+      end: "bottom 60%",
+      scrub: false,
+      markers: false,
+    },
   });
-
   const tlCosm = gsap.timeline({
     scrollTrigger: {
       trigger: ".profile",
@@ -47,9 +51,10 @@ function animation() {
     },
   });
   tlCosm.from(".profile", {
-    duration: 1,
+    duration: 1.5,
     backgroundColor: "#faf6f2",
     color: "#36454f",
+    ease: "power1.inOut",
   });
 
   const tlProfile = gsap.timeline({
@@ -61,6 +66,7 @@ function animation() {
   });
   tlProfile.from(".profile__text, .section_title__results", {
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
+    ease: "power1.inOut",
   });
 }
