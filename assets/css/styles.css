@@ -449,7 +449,6 @@ footer a {
   color: #faf6f2;
 }
 footer a:hover {
-  /* background-color: #333; */
   color: #faf6f2;
   text-decoration: underline;
 }
@@ -580,6 +579,8 @@ footer a:hover {
   }
 
   .diseases__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
   .diseases__list-span {
@@ -890,6 +891,8 @@ footer a:hover {
     padding-bottom: 0;
   }
   .diseases__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 30px;
     padding-left: 20px;
     font-size: 0.9rem;
