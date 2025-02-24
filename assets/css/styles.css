@@ -217,7 +217,7 @@ h3 {
 }
 .services__cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-content: space-around;
 }
@@ -236,10 +236,24 @@ h3 {
   transform: scale(1.05);
 }
 .diseases__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  gap: 70px;
+  margin: 50px;
   color: #36454f;
 }
+.diseases__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .diseases__list li {
-  padding: 15px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #ddd;
   font-weight: 500;
   line-height: 1.8;
@@ -248,13 +262,6 @@ h3 {
   border-bottom: none;
 }
 
-.diseases__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
-  margin: 50px;
-}
 .diseases__list-span {
   padding-left: 27px;
 }
@@ -265,6 +272,7 @@ h3 {
   border-radius: 0 40px 0 40px;
   object-fit: cover;
   height: 80%;
+  transform: translateY(90px);
 }
 
 .profile {
